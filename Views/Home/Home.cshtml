@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Home</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="~/Content/style.css" rel="stylesheet" type="text/css" />
+@Scripts.Render("~/bundles/jquery")
+    <script type="text/javascript">
+        function f1() {
+            $.getJSON("/Home/search?search=" + $('#search').val, function (x) {
+                if (x) {
+                    alert("available");
+                }
+                else {
+                    alert("not available")
+                }
+
+
+
+            });
+
+        }
+
+
+         </script>
+</head>
+<body style="background-image:url(~/images/body.jpg)">
+<div id="wrapper">
+  <div class="headerzone">
+    <div class="header">
+      <div class="headerText">Online Shopping</div>
+      <div class="phone"> +92 300-6918790
+        <div class="email"> bsef11a034@pucit.edu.pk </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+    <div class="topmenu">
+      <ul>
+       
+        <li><a href="~/Views/Home/about">About US</a></li>
+          <li>  
+    @Html.ActionLink("Login", "login") 
+     </li>
+          <li>  
+    @Html.ActionLink("Register", "register") 
+     </li>
+        <li style="border:none;"><a href="contact_us.html">Contact Us</a></li>
+      
+          <li> 
+             Search: <input type="text" name="search" id="search" /> 
+              <input type="button"  value="search" onclick="f1()" />
+          </li>
+      </ul>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="banner">
+    <div class="features">
+      <h2>Features</h2>
+      <div class="featuresText">
+        <ul>
+          <li>Internet Devices</li>
+          <li>Connectivity Devices</li>
+          <li>Clothes</li>
+        </ul>
+      </div>
+      <div class="buybutton">
+        <input type="image" src="~/images/buynow.jpg" />
+      </div>
+    </div>
+    <div class="clear"></div>
+    <div class="bannerText"><span class="blueText">In this website,</span> you can get clothes, mobiles, laptops, printers and other devices and related clothes. The purpose of this website is to provide the better and cheap products to the customers while sitting at home.
+      <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="box1">
+              <h1>Clothes</h1>
+
+              <div class="greenText"> Get your Favourite Clothes.</div>
+              <div class="cdBox"><img src="~/images/download (31).jpg" height="80" width="80" alt="" /> </div>
+              <div class="clear"></div>
+      <div class="clear"></div>
+      <div class="clear"></div>
+            </div>
+            <div class="box2">
+              <h1>Handsfree</h1>
+              <div class="greenText"> Get your Favourite Handsfree.</div>
+              <div class="cdBox"><img src="~/images/download.jpg" height="80" width="80" alt="" /> </div>
+              <div class="clear"></div>
+            <div class="clear"></div>
+                <div class="clear"></div>
+            </div>
+            <div class="box3">
+              <h1>Mobiles</h1>
+              <div class="greenText"> Get your Favourite Mobiles.</div>
+              <div class="cdBox"><img src="~/images/download (16).jpg" height="80" width="80" alt="" /> </div>
+              
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+          </div>
+          
+
+              <h1>Featured Products</h1>
+              
+                <div ><img src="~/images/download (15).jpg" height="80" width="80" title="Mobile" alt="" />
+                  <div class="picText1"><strong>Mobile</strong></div>
+                  </div>
+                <div ><img src="~/images/download (18).jpg" height="80" width="80"  alt="" />
+                  <div class="picText2"><strong>Mp4</strong></div>
+                </div>
+                <div ><img src="~/images/download (27).jpg"  height="80" width="80" alt="" />
+                  <div class="picText3"><strong>Fax</strong></div>
+                </div>
+                <div ><img src="~/images/download (28).jpg"  height="80" width="80" alt="" />
+                  <div class="picText4"><strong>Landline-Phone</strong></div>
+                
+                    </div>
+                  <div ><img src="~/images/download (21).jpg"  height="80" width="80" alt="" />
+                  <div class="picText5"><strong>Three-Piece</strong></div>
+                 </div>
+                      <div ><img src="~/images/download (23).jpg" height="80" width="80"  alt="" />
+                  <div class="picText6"><strong>Pents</strong></div>
+                 </div>
+                          <div><img src="~/images/download (33).jpg" height="80" width="80"  alt="" />
+                  <div class="picText7"><strong>Shirts</strong></div>
+                 </div>
+                              <div ><img src="~/images/download (38).jpg" height="80" width="80"  alt="" />
+                  <div class="picText8"><strong>Ties</strong></div>
+                 </div>
+                             <div ><img src="~/images/images (43).jpg" height="80" width="80"  alt="" />
+                  <div class="picText9"><strong>Shorts</strong></div>
+                 </div>
+                             <div ><img src="~/images/download (36).jpg" height="80" width="80"  alt="" />
+                  <div class="picText10"><strong>Tabs</strong></div>
+                 </div>
+  <div class="footer">
+   <div style="color:#000;">
+      Copyright (c) Bilal Arshad. All rights reserved.
+    </div>
+ 
+       </div >
+    
+ </body>
+</html>
